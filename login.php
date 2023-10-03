@@ -1,4 +1,4 @@
-<?php include("connection.php");?>
+<?php include("steel\connection.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,7 +127,7 @@ if(isset($_POST["submit"])){
         if($password == $row["password"]){
             $_SESSION["login"] = true;
            
-            header("Location: rinl.php");
+            header("Location: steel\rinl.php");
           
             // echo "<script>alert('login sucessful')</script>";  
         } 
